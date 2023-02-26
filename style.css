@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background-efeito.png), url(image/backgrond-fundo.png);
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    display: flex;    
+
+    padding: 30px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div #logo {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 1px 25px;
+    margin-left: 10px auto;
+}
+
+header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav a:hover {
+    background-color: rgb(21, 148, 27);
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+    "frase card"
+    "frase card"
+    "footer footer";
+    grid-template-rows: 40vh 10vh 20vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 50px auto;
+    padding: 10px 10px auto;
+    flex-wrap: wrap;
+}
+
+div.card {
+    align-self: center;
+    margin-right: 100px;
+    background-color: #005919;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(191.32deg, #02510A -118.59%, #296F34 15.64%, #90FC3B 56.18%, #005919 81.36%, #116A2A 109.76%, #481CBB 131.68%, #005919 131.68%);
+    border-radius: 50px;
+}  
+
+.card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 50px;
+    width: 245px;
+}
+
+.card h2 {
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.664);
+}
+.card p {
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.603);
+}
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 60px;
+    width: 500px; 
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+}
+
+button{
+    font-family: 'Inter';  
+    background: linear-gradient(101.61deg, #73dcfcbe -14.72%, #00ff1adc 66.97%, rgba(210, 118, 253, 0.753));
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 1px 1px black;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    margin: 20px 0px;    
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    width: auto;
+    background-color: rgb(50, 61, 61);
+    justify-content: space-between;
+    align-items: center;
+}
+
+div .especial img {
+    max-width: 250px;
+}
+
+div .eventos a,img {
+    max-width: 250px;
+    display: flex;
+}
+
+.redes a {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    max-width: 70px;
+    padding: 5px;
+    text-shadow: 1px 1px 5px black;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+    padding: 5px;
+    }
+    
+    header {
+    flex-direction: column;
+    }
+    
+    header > nav {
+    padding: 20px 0px;
+    text-align: center;
+    }
+    
+    main {
+    grid-template-areas: "frase" "card" "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    margin: 10px 10px auto;
+    }
+    
+    div.card {
+    margin: 20px 0px;
+    width: 90%;
+    height: auto;
+    }
+    
+    h1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    button {
+    width: 100%;
+    }
+    
+    footer {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .redes a {
+    font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {     
+    header {
+    flex-direction: column;
+    padding: 20px;
+    }
+    
+    header > nav {
+    padding: 10px;
+    }
+    
+    main {
+    grid-template-areas:
+    "frase"
+    "card"
+    "footer";
+    grid-template-rows: 30vh 50vh 20vh;
+    }
+    
+    div.card {
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    }
+    
+    h1 {
+    font-size: 30px;
+    width: 80%;
+    }
+    
+    button {
+    width: 80%;
+    height: 30px;
+    margin: 10px 0px;
+    }
+    
+    footer {
+    flex-direction: column;
+    }
+    
+    div .especial img, div .eventos a,img {
+    max-width: 200px;
+    }
+}
+
+@media only screen and(max-width: 500px) {
+
+}
+
+@media only screen and(max-width: 600px) {
+
+}
+
+@media only screen and(max-width: 700px) {
+
+}
+
+@media only screen and(max-width: 800px) {
+
+}
+
+@media only screen and(max-width: 900px) {
+
+}
