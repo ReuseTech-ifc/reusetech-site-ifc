@@ -5,10 +5,8 @@
 
 body {
     width: 100dvw;
-    height: 100dvh;
-    background-image: url(image/background-efeito.png), url(image/backgrond-fundo.png);
-    background-repeat: no-repeat;
-    background-color: black;
+    height: auto;
+    background: radial-gradient(circle at 30% 20%, rgb(8,58,8), black);
 }
 
 header {
