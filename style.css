@@ -10,9 +10,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 30% 20%, rgb(8, 58, 8) , black);
-    
-
+    background: radial-gradient(circle at 30% 20% , rgb(1, 30, 6) , black);
 }
 
 header {
@@ -104,7 +102,6 @@ div.card {
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.603);
 }
-
 
 h1 {
     font-family: 'Inter', sans-serif;
@@ -247,21 +244,21 @@ div .eventos a,img {
 }
 
 @media only screen and(max-width: 500px) {
-
+    /* Planejado para ser terminado */
 }
 
 @media only screen and(max-width: 600px) {
-
+    /* Planejado para ser terminado */
 }
 
 @media only screen and(max-width: 700px) {
-
+    /* Planejado para ser terminado */
 }
 
 @media only screen and(max-width: 800px) {
-
+    /* Planejado para ser terminado */
 }
 
 @media only screen and(max-width: 900px) {
-
+    /* Planejado para ser terminado */
 }

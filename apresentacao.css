@@ -6,8 +6,9 @@
 body {
     width: 100dvw;
     height: auto;
-    background: radial-gradient(circle at 30% 20%, rgb(8,58,8), black);
+    background: radial-gradient(circle at 30% 20% , rgb(1, 30, 6) , black);
 }
+
 
 header {
     width: 100%;
