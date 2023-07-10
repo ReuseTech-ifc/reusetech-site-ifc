@@ -9,18 +9,21 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="image/reusetech-logo.png"  id="logo" alt="Logo do Projeto - ReuseTech ">
-            <img src="image/reusetech-letra.png"  id="logo-name" alt="Letra do Projeto - ReuseTech ">
+        <div class="header-content">
+          <div class="logo">
+            <img src="image/reusetech-logo.png" id="logo" alt="Logo do Projeto - ReuseTech ">
+            <img src="image/reusetech-letra.png" id="logo-name" alt="Letra do Projeto - ReuseTech ">
+          </div>
+          <button class="menu-toggle">Menu</button>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="apresentacao.html">Apresentação</a>
-            <a href="participantes.html">Participantes</a>
-            <a href="doacao.html">Doe</a>
+        <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="apresentacao.html">Apresentação</a>
+          <a href="participantes.html">Participantes</a>
+          <a href="doacao.html">Doe</a>
         </nav>
-    </header>
-
+      </header>
+      
     <main>
         <div class="frase">
             <h1>Recicle, Você Também Pode Nós ajudar!</h1>
@@ -52,5 +55,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
