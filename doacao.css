@@ -186,12 +186,16 @@ ul {
 }
 
 .we-offer-area .item h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   font-weight: 600;
-  text-transform: capitalize;
 }
 
 .we-offer-area .item p {
-  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.05em;
+  margin: 10px 0px;
+  text-align: justify;
 }
 
 .we-offer-area .item i,
