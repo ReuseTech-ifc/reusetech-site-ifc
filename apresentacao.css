@@ -141,6 +141,10 @@ color:#ffffff ;
 padding :20px ; 
 }
 
+li {
+    text-align: justify;
+}
+
 .paralax .border{
     background:#111111 ; 
     color:#ffffff ; 
