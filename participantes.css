@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
 * {
     font-family: Nunito, sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 body {
@@ -15,7 +29,6 @@ header {
     width: 100%;
     display: flex;    
     padding: 30px;
-
     justify-content: space-around;
     align-items: center;
 }
@@ -51,7 +64,6 @@ header nav a:hover {
     box-shadow: 5px 5px 0px rgb(0, 0, 0);
 }
 
-
 footer {
     display: flex;
     width: auto;
@@ -78,8 +90,7 @@ div .eventos a,img {
     text-shadow: 1px 1px 5px black;
 }
 
-
-  .text-blk {
+.text-blk {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -201,20 +212,6 @@ div .eventos a,img {
   .head-da-secao {
     text-align: center;
   }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 .wk-desk-1 {
