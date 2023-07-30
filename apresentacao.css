@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    width: auto;
+    height: 100%;
+    background: radial-gradient(circle at 30% 20%, rgb(13, 29, 13), black);
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666666;  
+}
+
+header {
+    width: 100%;
+    display: flex;
+
+    padding: 30px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div #logo {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 1px 25px;
+    margin-left: 10px auto;
+}
+
+header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav a:hover {
+    background-color: rgb(21, 148, 27);
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+}
+
+main {
+    color:white ;
+   font-family :Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+main > div {
+   display :flex ;
+   align-items :normal ;
+   gap :10px ;
+   margin :15px ;
+}
+
+
+footer{
+   width :100dvw ;
+   display:flex ;
+   background-color :rgb(50,61,61) ;
+   justify-content :space-between ;
+   align-items :center ;
+}
+
+div .especial img{
+   max-width :250px ;
+}
+
+footer a > img{
+   max-width :250px ;
+   display :flex ;
+}
+
+.redes a{
+   font-family :'Courier New', Courier, monospace ;
+   color :rgb(170,170,170) ;
+   text-decoration :none ;
+   max-width :70px ;
+   padding :5px ;
+   text-shadow :1px 1px 5px black ;
+}
+
+
+/************** Paralax sections **********/
+
+.paralax{
+background:url(image/apresentacao-1.png) ; 
+min-height :100% ; 
+}
+
+.paralax-2{
+background:url(image/foto-historia.jpg) ; 
+min-height :500px ; /* Ajuste este valor de acordo com suas necessidades */
+}
+
+.paralax-3{
+background:url(image/evento-1.jpg) ; 
+min-height :400px ; 
+}
+
+.paralax,
+.paralax-2,
+.paralax-3{
+position:relative ; 
+opacity :0.8 ; 
+background-position:center ; 
+background-size :cover ; 
+background-repeat:no-repeat ; 
+/* fixed = parallax, scroll = normal */
+background-attachment :fixed ;   
+}
+
+.paralaxText{
+position:absolute ; 
+top :50% ; 
+width :100% ; 
+text-align:center ; 
+color:#000000 ; 
+font-size :27px ; 
+letter-spacing :8px ; 
+text-transform :uppercase ; 
+}
+
+.paralaxText .border{
+color:#ffffff ; 
+padding :20px ; 
+}
+
+li {
+    text-align: justify;
+}
+
+.paralax .border{
+    background:#111111 ; 
+    color:#ffffff ; 
+    padding :20px ; 
+    box-shadow :1px 1px 10px rgba(0,255,76,0.836) ;
+    
+}
+    
+
+.paralaxText .trans{
+background-color :transparent ; 
+}
+
+/***************** Normal sections ************/
+
+.section{
+text-align:center ; 
+padding :50px 80px ; 
+}
+
+.section-light{
+background:#f4f4f4 ; 
+color:#666666 ; 
+}
+
+.section-dark{
+background:#282e34 ; 
+color:#dddddd ; 
+}
+
+/***************** Media Queries ***************/
+
+@media (max-width:568px){
+.paralax,
+.paralax-2,
+.paralax-3{
+/* fixed = parallax, scroll = normal */
+background-attachment :scroll ; 
+}
+}
