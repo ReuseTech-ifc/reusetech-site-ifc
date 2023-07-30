@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <script defer src="js/animacao.js"></script>
     <title>ReuseTech - Mudando o Mundo!</title>
 </head>
 <body>
-    <header>
+    <header class="cabeçalho">
         <div class="header-content">
           <div class="logo">
             <img src="image/reusetech-logo.png" id="logo" alt="Logo do Projeto - ReuseTech ">
@@ -18,9 +19,9 @@
         </div>
         <nav class="menu">
           <a href="index.html">Home</a>
-          <a href="apresentacao.html">Apresentação</a>
-          <a href="participantes.html">Participantes</a>
-          <a href="doacao.html">Doe</a>
+          <a href="./pages/apresentacao.html">Apresentação</a>
+          <a href="./pages/participantes.html">Participantes</a>
+          <a href="./pages/doacao.html">Doe</a>
         </nav>
       </header>
       
@@ -55,13 +56,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const menu = document.querySelector('.menu');
-        
-        menuToggle.addEventListener('click', () => {
-          menu.classList.toggle('active');
-        });
-    </script>
+    
 </body>
 </html>

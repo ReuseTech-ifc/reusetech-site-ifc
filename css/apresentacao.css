@@ -99,17 +99,17 @@ footer a > img{
 /************** Paralax sections **********/
 
 .paralax{
-background:url(image/apresentacao-1.png) ; 
+background:url(../image/apresentacao-1.png) ; 
 min-height :100% ; 
 }
 
 .paralax-2{
-background:url(image/foto-historia.jpg) ; 
+background:url(../image/foto-historia.jpg) ; 
 min-height :500px ; /* Ajuste este valor de acordo com suas necessidades */
 }
 
 .paralax-3{
-background:url(image/evento-1.jpg) ; 
+background:url(../image/evento-1.jpg) ; 
 min-height :400px ; 
 }
 
