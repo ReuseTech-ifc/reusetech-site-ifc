@@ -8,10 +8,10 @@ menuToggle.addEventListener('click', () => {
 
 
 
-const cards = document.querySelectorAll('.card');
-const image = document.querySelectorAll('.image');
-const titulo = document.querySelectorAll('.titulo');
-const descricao = document.querySelectorAll('.descricao');
+const caixa = document.querySelector('.caixa');
+const image = document.querySelector('.image');
+const titulo = document.querySelector('.titulo');
+const descricao = document.querySelector('.descricao');
 
 function Componentes(imagem, titulo, descricao) {
   this.imagem = imagem;
@@ -26,12 +26,26 @@ const placadevideo = new Componentes('../image/img-card.webp', 'Placa de Vídeo
 let lista = [placamae, processador, placadevideo];
 
 
+const entrar = () => {
 
-setInterval(() => {
-  lista.shift();
-  lista.push(placamae, processador, placadevideo);
-  image[0].src = lista[0].imagem;
-  titulo[0].innerHTML = lista[0].titulo;
-  descricao[0].innerHTML = lista[0].descricao;
-}, 2000);
+    caixa.classList.add('entrar');
+
+    setTimeout(() => {
+        caixa.classList.remove('entrar');
+    }, 1500);
+}
+
+const sair = () => {
+    caixa.classList.add('sair');
+
+    setTimeout(() => {
+        caixa.classList.remove('sair');
+    }, 1500);
+}
+
+
+
+
+
+
 
