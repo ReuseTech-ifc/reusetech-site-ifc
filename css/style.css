@@ -104,15 +104,63 @@ div.card {
     height: 400px;
     background: linear-gradient(191.32deg, #02510A -118.59%, #296F34 15.64%, #90FC3B 56.18%, #005919 81.36%, #116A2A 109.76%, #481CBB 131.68%, #005919 131.68%);
     border-radius: 50px;
+    position: relative;
+    overflow: hidden;
 }  
 
 .card img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
-    padding-left: 50px;
-    width: 245px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+div.caixa {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.sair {
+    animation: sair 1.5s ease-in-out infinite;
+}
+
+.entrar {
+    animation: entrar 1.5s ease-in-out infinite;
+}
+
+@keyframes sair {
+    from {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    to {
+        margin-left: -75%;
+    }
+}
+
+@keyframes entrar {
+    from {
+        margin-left: 120%;
+    }
+
+    to {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 
